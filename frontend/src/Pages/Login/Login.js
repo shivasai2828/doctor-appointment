@@ -10,7 +10,8 @@ const Login = () => {
 
   const navigator = useNavigate();
 
-  const loginUrl = "http://localhost:5000/api/user/login";
+  const loginUrl =
+    "https://doctor-appointment-dfna.onrender.com/api/user/login";
   const submitForm = async (e) => {
     e.preventDefault();
     const data = { email, password };

@@ -22,7 +22,6 @@
   gap: 10px;
   border: 1px solid #c9d8ff;
   border-radius: 10px;
-  width: 80%;
 }
 .each-doctor-home img {
   /* width: 230px; */
@@ -48,4 +47,16 @@
   background-color: #c9d8ff;
   color: black;
   font-weight: 600;
+}
+
+@media screen and (max-width: 799px) {
+  .docters-row-container {
+    flex-direction: column;
+  }
+  .all-docters-options-p {
+    width: 100%;
+  }
+  .all-docters-con {
+    grid-template-columns: auto;
+  }
 }

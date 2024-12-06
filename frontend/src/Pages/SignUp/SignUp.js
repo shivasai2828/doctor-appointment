@@ -10,10 +10,11 @@ const SignUp = () => {
   const [password, SetPassword] = useState("");
 
   const navigator = useNavigate();
-  const registerUrl = "http://localhost:5000/api/user/register";
+  const registerUrl =
+    "https://doctor-appointment-dfna.onrender.com/api/user/register";
 
   const handleSubmit = async (e) => {
-    e.preventDefault(); 
+    e.preventDefault();
     const data = { name: fullName, email, password };
     console.log(data);
     const response = await fetch(registerUrl, {

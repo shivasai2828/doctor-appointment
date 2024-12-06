@@ -71,3 +71,17 @@
 .active hr {
   visibility: visible;
 }
+.mobile-view {
+  display: none;
+}
+@media screen and (max-width: 799px) {
+  .desktop-nav {
+    display: none;
+  }
+  .nav-logo {
+    width: 120px;
+  }
+  .mobile-view {
+    display: block;
+  }
+}

@@ -129,7 +129,7 @@
 .each-date-date-container {
   box-shadow: 0px 4px 12px 0px #5f6fff66;
   border-radius: 50px;
-  padding: 10px 20px;
+  padding: 18px 14px;
   cursor: pointer;
   text-align: center;
 }
@@ -172,4 +172,50 @@
 .active-time {
   background-color: #f5f5f5;
   border: 1px solid red;
+}
+
+@media screen and (max-width: 799px) {
+  .specific-dr-details-container {
+    flex-direction: column;
+    margin: 0px;
+  }
+  .specific-dr-details-content {
+    margin-left: 0px;
+  }
+  .docter-img {
+    width: 90%;
+    align-self: center;
+  }
+  .specific-docter-name {
+    font-size: 24px;
+  }
+  .dr-about {
+    font-size: 15px;
+  }
+  .dr-expriance-p {
+    font-size: 15px;
+    padding-bottom: 15px;
+  }
+  .specific-section-third {
+    margin: 0px;
+  }
+  .related-docters-list {
+    justify-content: center;
+  }
+  .each-doctor-specific {
+    width: 100%;
+  }
+  .doctor-img-specific-related {
+    width: 100%;
+  }
+  .specific-dr-section-2 {
+    margin: 20px 0px;
+    margin-bottom: 50px;
+  }
+  .booking-date-day-container {
+    overflow-x: scroll;
+  }
+  .booking-slots-heading {
+    font-size: 18px;
+  }
 }
