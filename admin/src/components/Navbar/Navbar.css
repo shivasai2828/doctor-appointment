@@ -1,0 +1,29 @@
+.navbar-row-div {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+.navbar-bg {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 12px 27px;
+}
+.navbar-admin-btn {
+  border: 1px solid #000;
+  background-color: transparent;
+  padding: 7px 20px;
+  border-radius: 20px;
+  cursor: pointer;
+  font-weight: bold;
+}
+.logout-btn {
+  background-color: #5f6fff;
+  padding: 7px 20px;
+  border-radius: 20px;
+  cursor: pointer;
+  font-weight: bold;
+  color: #fff;
+  outline: none;
+  border: none;
+}

@@ -1,0 +1,57 @@
+.all-doctors-bg {
+  margin: 20px 0;
+}
+.all-doctors-heading {
+  font-size: 22px;
+  color: #323232;
+  padding: 5px;
+}
+.docters-list {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 20px;
+}
+.all-doctors-cards {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 20px;
+  margin: 20px 0;
+}
+
+.doctor-card {
+  width: 200px;
+  /* height: 300px; */
+  background-color: #f4f4f4;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  /* justify-content: space-between; */
+  /* padding: 10px; */
+  border: 1px solid #c9d8ff;
+}
+.docter-img-all-doctors {
+  background-color: #eaefff;
+  border-radius: 10px;
+  width: 200px;
+}
+.docter-card-content {
+  padding: 10px 12px;
+}
+.doctor-card-name {
+  font-weight: 700;
+  color: #1f2937;
+}
+.doctor-card-speciality {
+  color: #4b5563;
+}
+.input-box-doctor-card {
+  display: flex;
+  gap: 5px;
+  align-items: center;
+}
+.input-box-doctor-card p {
+  color: #1f2937;
+}

@@ -1,0 +1,19 @@
+.sidebar-main {
+  min-height: 100vh;
+  border-right: 1px solid #bebebe;
+}
+.nav-link {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  cursor: pointer;
+  margin: 10px 0;
+  text-decoration: none;
+  color: #515151;
+  font-size: 20px;
+  padding: 15px 30px;
+}
+.active {
+  background-color: #f2f3ff;
+  border-right: 5px solid #5f6fff;
+}

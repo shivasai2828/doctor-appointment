@@ -1,0 +1,51 @@
+.docters-main-bg {
+  min-height: 90vh;
+  margin: 40px 0;
+}
+.docters-row-container {
+  display: flex;
+  align-items: flex-start;
+  gap: 50px;
+  margin: 20px 0;
+}
+.all-docters-con {
+  flex: 1;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  gap: 20px;
+}
+
+.each-doctor-home {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  border: 1px solid #c9d8ff;
+  border-radius: 10px;
+  width: 80%;
+}
+.each-doctor-home img {
+  /* width: 230px; */
+  width: 100%;
+  object-fit: cover;
+}
+.docter-img-bg {
+  border-radius: 10px;
+  background-color: #eaefff;
+}
+
+.all-docters-options-p {
+  border: 1px solid #b4b4b4;
+  padding: 6px;
+  color: #4b5563;
+  padding-left: 20px;
+  border-radius: 8px;
+  min-width: 200px;
+  margin-bottom: 10px;
+  cursor: pointer;
+}
+.bg-active {
+  background-color: #c9d8ff;
+  color: black;
+  font-weight: 600;
+}

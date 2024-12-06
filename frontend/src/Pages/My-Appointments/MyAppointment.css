@@ -1,0 +1,50 @@
+.my-appoinemtns-main-box {
+  min-height: 100vh;
+  margin: 30px 0;
+}
+.appointment-page-heading {
+  color: #4b5563;
+  font-size: 30px;
+  font-weight: 600;
+  margin: 10px 0;
+}
+.my-appointment-div-each {
+  padding: 15px;
+  margin-bottom: 10px;
+  display: flex;
+  align-items: flex-start;
+  gap: 20px;
+}
+.appointment-user-img {
+  width: 200px;
+  background-color: #eaefff;
+}
+.appointment-right {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+.address-appointments {
+  font-size: 20px;
+  font-weight: 600;
+  margin: 12px 0;
+}
+.pay-btn {
+  padding: 5px 10px;
+  /* min-width: 130px; */
+  background-color: #5f6fff;
+  color: #fff;
+  align-self: flex-end;
+  border: 1px solid #bababa;
+}
+.appointments-btn-div {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+.one-btn-appointment {
+  width: 141px;
+  background-color: transparent;
+  color: #000;
+}

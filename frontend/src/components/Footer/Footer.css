@@ -1,0 +1,37 @@
+.footer-bg {
+  margin: 30px 0;
+  margin-top: 100px;
+}
+.footer-first-component {
+  display: flex;
+  /* align-items: center; */
+  justify-content: space-between;
+}
+
+.footer-flex-1 {
+  width: 60%;
+}
+.footer-flex-2 {
+  width: 20%;
+}
+.footer-flex-3 {
+  width: 20%;
+}
+.footer-flex-1 p {
+  width: 90%;
+  margin-top: 20px;
+}
+.footer-first-component ul {
+  margin-top: 20px;
+}
+.footer-first-component ul li {
+  padding: 4px 0px;
+}
+.copy-rights {
+  text-align: center;
+  margin-top: 20px;
+  font-size: 14px;
+}
+.last-footer-container {
+  margin-top: 16px;
+}

@@ -1,0 +1,20 @@
+* {
+  padding: 0px;
+  margin: 0px;
+  list-style-type: none;
+}
+.panel-bg {
+  display: flex;
+  align-items: flex-start;
+  gap: 30px;
+}
+.wrapper {
+  /* width: 90%; */
+  /* max-width: 1150px; */
+  margin: 10px 0;
+}
+.navlink {
+  color: #333;
+  text-decoration: none;
+  padding: 10px;
+}

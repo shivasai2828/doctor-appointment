@@ -1,0 +1,73 @@
+* {
+  list-style-type: none;
+  text-decoration: none;
+}
+.nav-bg {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 0;
+}
+.nav-ul-tag {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+.nav-hr {
+  width: 40%;
+  margin: 0 auto;
+  visibility: hidden;
+}
+.nav-btn {
+  background-color: #5f6fff;
+  color: #fff;
+  border: none;
+  outline: none;
+  padding: 8px 25px;
+  border-radius: 20px;
+  font-size: 15px;
+  font-weight: bold;
+  cursor: pointer;
+}
+.profile-img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+.nav-main-login {
+  display: flex;
+  flex-direction: column;
+}
+.nav-login-box {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.nav-logo {
+  cursor: pointer;
+}
+
+.nav-bar-menu {
+  position: absolute;
+  max-width: 300px;
+  background-color: #f8f8f8;
+  right: 73px;
+  top: 60px;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  visibility: hidden;
+}
+.nav-main-login:hover {
+  .nav-bar-menu {
+    visibility: visible;
+  }
+}
+.nav-bar-menu p {
+  cursor: pointer;
+}
+.active hr {
+  visibility: visible;
+}
