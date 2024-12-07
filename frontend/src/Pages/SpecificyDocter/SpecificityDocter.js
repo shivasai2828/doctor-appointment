@@ -1,10 +1,11 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, useContext } from "react";
 import "./SpecificityDocter.css";
 import { useNavigate, useParams } from "react-router-dom";
 import { doctors } from "../../assets/assets";
 import { assets } from "./../../assets/assets";
 import Cookies from "js-cookie";
 import { toast } from "react-toastify";
+import { StoreContext } from "../../context/StoreContext";
 
 const SpecificityDocter = () => {
   const [docSlots, SetDocSlots] = useState([]);
@@ -15,6 +16,7 @@ const SpecificityDocter = () => {
 
   const { specificity } = useParams();
   const navigetor = useNavigate();
+  const { appointmentList, SetAppointmentList } = useContext(StoreContext);
   const doctor = doctors.find((doc) => doc._id === specificity);
   const relatedDocters = doctors.filter(
     (doc) => doc.speciality === doctor.speciality
@@ -56,6 +58,7 @@ const SpecificityDocter = () => {
           datetime: new Date(currentDate),
           time: formatedTime,
         });
+
         //increment time by 30 mint
         currentDate.setMinutes(currentDate.getMinutes() + 30);
       }
@@ -74,8 +77,19 @@ const SpecificityDocter = () => {
       toast.error("Please login to book an appointment");
       navigetor("/signup");
     } else {
-      toast.success("your slot is confirmed");
-      console.log([slotIndex, slotTime]);
+      if (slotTime === "") {
+        toast.error("Please select a Time slot");
+        return;
+      } else {
+        toast.success("your slot is confirmed");
+
+        let data = {
+          day: daysOfList[slotIndex],
+          time: slotTime,
+          doctordetails: { ...doctor },
+        };
+        SetAppointmentList((prev) => [...prev, data]);
+      }
     }
   };
   return (

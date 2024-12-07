@@ -66,9 +66,9 @@ const Login = () => {
           </button>
         </form>
         <p>
-          Create an
+          Create an new account?
           <span onClick={() => navigator("/signup")} className="login-span">
-            account?
+            Click here
           </span>
         </p>
       </div>

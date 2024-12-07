@@ -20,12 +20,13 @@
 }
 .about-us-header {
   font-size: 40px;
-  font-weight: bold;
+  font-weight: normal;
   color: #4b5563;
   text-align: center;
 }
 .about-us-header span {
   color: #000;
+  font-weight: bold;
 }
 .about-paras {
   color: #4b5563;
@@ -48,6 +49,7 @@
   border: 1px solid #ababab;
   padding: 40px;
 }
+
 .about-us-headings {
   font-size: 24px;
   font-weight: bold;
@@ -56,4 +58,32 @@
 }
 .about-us-paras {
   color: #4b5563;
+}
+.about-us-last-container-child:hover {
+  background-color: #6171ff;
+  color: #fff;
+  cursor: pointer;
+  .about-us-paras {
+    color: #fff;
+  }
+  .about-us-headings {
+    color: #fff;
+  }
+}
+@media screen and (max-width: 799px) {
+  .about-top-section {
+    flex-direction: column;
+    /* justify-content: center; */
+    align-items: center;
+  }
+  .about-img {
+    width: 90%;
+    margin-bottom: 15px;
+  }
+  .about-flex-2 {
+    width: 100%;
+  }
+  .about-us-last-container {
+    grid-template-columns: auto;
+  }
 }

@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, useContext } from "react";
 import Navbar from "./components/Navbar/Navbar";
 import "./App.css";
 import HomePage from "./Pages/HomePage/HomePage";
@@ -14,12 +14,15 @@ import Myprofile from "./Pages/My-profile/Myprofile";
 import MyAppointment from "./Pages/My-Appointments/MyAppointment";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
+import { StoreContext } from "./context/StoreContext";
+
 const App = () => {
   const location = useLocation();
 
   const IsloginUrl = location.pathname === "/login";
   const IssignupUrl = location.pathname === "/signup";
-
+  const { name } = useContext(StoreContext);
+  console.log(name);
   return (
     <div className="main-wrapper">
       {IsloginUrl || IssignupUrl ? null : <Navbar />}

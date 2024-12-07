@@ -3,21 +3,28 @@ import "./Myprofile.css";
 import { assets } from "../../assets/assets";
 const Myprofile = () => {
   const [userData, SetUserData] = useState({
-    name: "John Doe",
+    name: "dummy name",
     age: 30,
-    email: "johndoe@example.com",
+    email: "boddushivasai@gmail.com",
     address: "123 Main St, Anytown, USA",
-    phone: "123-456-7890",
+    phone: "8500548260",
     Gender: "Male",
-    Birthday: "28/12.2003",
+    Birthday: "28/12.2002",
   });
   const [isEdit, SetIsEdit] = useState(false);
+  const handleInputs = (event) => {
+    const { name, value } = event.target;
+    SetUserData({ ...userData, [name]: value });
+  };
   return (
     <div className="my-profile-main-div">
       <div>
         <img src={assets.profile_pic} alt="Profile Image" />
         {isEdit ? (
           <input
+            name="name"
+            value={userData.name}
+            onChange={handleInputs}
             placeholder="Name"
             type="text"
             className="my-profile-input-fields"
@@ -30,19 +37,37 @@ const Myprofile = () => {
         <div className="my-profile-grid-div">
           <p>Email Id: </p>
           {isEdit ? (
-            <input type="email" className="my-profile-input-fields" />
+            <input
+              name="email"
+              value={userData.email}
+              onChange={handleInputs}
+              type="email"
+              className="my-profile-input-fields"
+            />
           ) : (
             <p>{userData.email}</p>
           )}
           <p>Phone:</p>
           {isEdit ? (
-            <input type="number" className="my-profile-input-fields" />
+            <input
+              name="phone"
+              value={userData.phone}
+              onChange={handleInputs}
+              type="number"
+              className="my-profile-input-fields"
+            />
           ) : (
             <p>{userData.phone}</p>
           )}
           <p>Address:</p>
           {isEdit ? (
-            <input type="text" className="my-profile-input-fields" />
+            <input
+              name="address"
+              value={userData.address}
+              onChange={handleInputs}
+              type="text"
+              className="my-profile-input-fields"
+            />
           ) : (
             <p>{userData.address}</p>
           )}
@@ -51,7 +76,11 @@ const Myprofile = () => {
         <div className="my-profile-grid-div">
           <p>Gender</p>
           {isEdit ? (
-            <select className="my-profile-input-fields">
+            <select
+              name="Gender"
+              onChange={handleInputs}
+              className="my-profile-input-fields"
+            >
               <option value="Male">Male</option>
               <option value="Female">Female</option>
               <option value="Other">Other</option>
@@ -61,7 +90,13 @@ const Myprofile = () => {
           )}
           <p>Birthday:</p>
           {isEdit ? (
-            <input type="date" className="my-profile-input-fields" />
+            <input
+              name="Birthday"
+              value={userData.Birthday}
+              onChange={handleInputs}
+              type="date"
+              className="my-profile-input-fields"
+            />
           ) : (
             <p>{userData.Birthday}</p>
           )}

@@ -26,6 +26,7 @@
 }
 .footer-first-component ul li {
   padding: 4px 0px;
+  cursor: pointer;
 }
 .copy-rights {
   text-align: center;

@@ -6,7 +6,13 @@
 .contact-us-heading {
   text-align: center;
   font-size: 40px;
+  color: #707070;
+  font-weight: normal;
   margin-bottom: 20px;
+}
+.contact-us-heading span {
+  color: #374151;
+  font-weight: 700;
 }
 .contact-us-row {
   display: flex;
@@ -46,4 +52,26 @@
   color: #1f2937;
   background-color: #ffffff;
   border: 1px solid #1f2937;
+  border-radius: 20px;
+  cursor: pointer;
+  margin-top: 20px;
+}
+.contact-us-row button:hover {
+  color: #fff;
+  background-color: #1f2937;
+}
+
+@media screen and (max-width: 799px) {
+  .contact-us-row {
+    flex-direction: column;
+    align-items: center;
+  }
+  .contact-us-row img {
+    width: 90%;
+    margin-bottom: 15px;
+  }
+  .contact-flex-right {
+    padding: 20px;
+    width: 90%;
+  }
 }

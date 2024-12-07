@@ -21,19 +21,19 @@ const Navbar = () => {
         />
         <ul className="nav-ul-tag desktop-nav">
           <NavLink to="/">
-            <li>Home</li>
+            <li className="nav-link" >Home</li>
             <hr className="nav-hr" />
           </NavLink>
           <NavLink to="/docters">
-            <li>All Doctors</li>
+            <li className="nav-link" >All Doctors</li>
             <hr className="nav-hr" />
           </NavLink>
           <NavLink to="/about-us">
-            <li>ABOUT</li>
+            <li className="nav-link" >ABOUT</li>
             <hr className="nav-hr" />
           </NavLink>
           <NavLink to="/contact-us">
-            <li>Contact</li>
+            <li className="nav-link" >Contact</li>
             <hr className="nav-hr" />
           </NavLink>
         </ul>
