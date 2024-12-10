@@ -79,7 +79,7 @@ const SignUp = () => {
             />
           </div>
           <button className="login-btn" type="submit">
-            Login
+            Create 
           </button>
         </form>
         <p>

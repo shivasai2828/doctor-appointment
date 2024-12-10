@@ -5,9 +5,9 @@ const Myprofile = () => {
   const [userData, SetUserData] = useState({
     name: "dummy name",
     age: 30,
-    email: "boddushivasai@gmail.com",
+    email: "dummy@gmail.com",
     address: "123 Main St, Anytown, USA",
-    phone: "8500548260",
+    phone: "+91-00000000",
     Gender: "Male",
     Birthday: "28/12.2002",
   });

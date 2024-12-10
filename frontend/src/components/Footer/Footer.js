@@ -10,10 +10,10 @@ const Footer = () => {
         <div className="footer-flex-1">
           <img src={assets.logo} alt="logo" />
           <p>
-            Lorem Ipsum is simply dummy text of the printing and typesetting
-            industry. Lorem Ipsum has been the industry's standard dummy text
-            ever since the 1500s, when an unknown printer took a galley of type
-            and scrambled it to make a type specimen book.
+            At <b>Prescripto</b>, we bridge the gap between patients and
+            healthcare providers with a secure, user-friendly platform. Book
+            appointments effortlessly and access detailed profiles of trusted
+            doctors to ensure you get the care you deserve.
           </p>
         </div>
         <div className="footer-flex-2">

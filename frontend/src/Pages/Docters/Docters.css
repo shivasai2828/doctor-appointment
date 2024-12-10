@@ -54,7 +54,7 @@
     flex-direction: column;
   }
   .all-docters-options-p {
-    width: 100%;
+    width: 80%;
   }
   .all-docters-con {
     grid-template-columns: auto;

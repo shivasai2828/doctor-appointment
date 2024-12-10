@@ -21,19 +21,19 @@ const Navbar = () => {
         />
         <ul className="nav-ul-tag desktop-nav">
           <NavLink to="/">
-            <li className="nav-link" >Home</li>
+            <li className="nav-link">Home</li>
             <hr className="nav-hr" />
           </NavLink>
           <NavLink to="/docters">
-            <li className="nav-link" >All Doctors</li>
+            <li className="nav-link">All Doctors</li>
             <hr className="nav-hr" />
           </NavLink>
           <NavLink to="/about-us">
-            <li className="nav-link" >ABOUT</li>
+            <li className="nav-link">ABOUT</li>
             <hr className="nav-hr" />
           </NavLink>
           <NavLink to="/contact-us">
-            <li className="nav-link" >Contact</li>
+            <li className="nav-link">Contact</li>
             <hr className="nav-hr" />
           </NavLink>
         </ul>
@@ -68,11 +68,41 @@ const Navbar = () => {
             </button>
           )}
         </div>
+
         <div className="mobile-view" onClick={() => SetisOpened(!isOpend)}>
           {isOpend ? <IoMdClose /> : <RxHamburgerMenu />}
         </div>
       </div>
       <hr />
+      <div className={`sidebar-con ${isOpend ? "open" : ""}`}>
+        <div className="sidebar">
+          <div className="sidebar-row">
+            <img src="" alt="logo" />{" "}
+            <IoMdClose onClick={() => SetisOpened(false)} />{" "}
+          </div>
+          <ul
+            className="sidebar-nav-container"
+            onClick={() => SetisOpened(false)}
+          >
+            <NavLink to="/">
+              <li className="nav-link">Home</li>
+              <hr className="nav-hr" />
+            </NavLink>
+            <NavLink to="/docters">
+              <li className="nav-link">All Doctors</li>
+              <hr className="nav-hr" />
+            </NavLink>
+            <NavLink to="/about-us">
+              <li className="nav-link">ABOUT</li>
+              <hr className="nav-hr" />
+            </NavLink>
+            <NavLink to="/contact-us">
+              <li className="nav-link">Contact</li>
+              <hr className="nav-hr" />
+            </NavLink>
+          </ul>
+        </div>
+      </div>
     </>
   );
 };

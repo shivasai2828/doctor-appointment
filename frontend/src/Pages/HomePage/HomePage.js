@@ -24,11 +24,8 @@ const HomePage = () => {
                 schedule your appointment hassle-free.
               </p>
             </div>
-            <button
-              className="home-header-button"
-              onClick={() => navigator("#specility")}
-            >
-              Book appointment{" "}
+            <button className="home-header-button">
+              <a href="#specility">Book appointment </a>
             </button>
           </div>
           <div className="home-header-flex-right">

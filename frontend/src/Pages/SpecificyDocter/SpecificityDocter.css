@@ -131,7 +131,14 @@
   border-radius: 50px;
   padding: 18px 14px;
   cursor: pointer;
+  overflow: visible;
   text-align: center;
+}
+.each-date-date-container p {
+  /* white-space: nowrap;
+  font-size: 20px; */
+  /* width: 100px; */
+  /* padding: auto; */
 }
 .slot-time-container {
   display: flex;
@@ -154,6 +161,7 @@
   white-space: nowrap;
   margin: 10px 0;
   cursor: pointer;
+  overflow: visible;
 }
 .appoinement-btn {
   background-color: #5f6fff;
